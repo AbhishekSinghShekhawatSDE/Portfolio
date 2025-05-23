@@ -170,47 +170,89 @@
                 </div>
             </div>
         </div>
-        <div class="mt-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-semibold mb-6 text-center text-primary dark:text-primary-light">Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-cloud-upload-alt mr-2 text-accent"></i>DevOps & Cloud</h4>
-                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                        <li>Cloud Computing Fundamentals</li>
-                        <li>Basic Networking</li>
-                        <li>Python</li>
-                        <li>Jira</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-code mr-2 text-accent"></i>Web & Programming</h4>
-                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-tools mr-2 text-accent"></i>Tools & Platforms</h4>
-                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-                        <li>IDEs: VS Code, Eclipse</li>
-                        <li>Productivity: Notion, Obsidian</li>
-                        <li>AI Tools: ChatGPT, GitHub Copilot, DeepSeek</li>
-                    </ul>
-                </div>
-                <div class="lg:col-span-3"> <!-- Marketing & Soft Skills can span more if needed, or keep it as a single column -->
-                     <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-lightbulb mr-2 text-accent"></i>Marketing & Soft Skills</h4>
-                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 md:columns-1">
-                        <li>Digital Marketing & Social Media Management</li>
-                        <li>SEO (Search Engine Optimization)</li>
-                        <li>Blogging & Content Creation</li>
-                        <li>Video Editing</li>
-                        <li>Problem Solving & Team Collaboration</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Skills Section -->
+<div class="mt-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+    <h3 class="text-2xl font-semibold mb-8 text-center text-primary dark:text-primary-light">Skills</h3> {/* Increased mb */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10"> {/* Added gap-y */}
+
+        
+        <div class="skill-category-item">
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-cloud-upload-alt mr-3 text-accent"></i>DevOps & Cloud Fundamentals
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>Cloud Computing Concepts</li>
+                <li>Basic Networking</li>
+                <li>Version Control: Git & GitHub</li>
+                <li>CI/CD Awareness</li>
+                <li>Jira (Beginner)</li>
+            </ul>
         </div>
+
+        
+        <div class="skill-category-item">
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-laptop-code mr-3 text-accent"></i>Programming & Scripting
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>Python (Beginner – Scripting & Automation)</li>
+                <li>PHP (Beginner)</li>
+                <li>MySQL (Database Handling)</li>
+            </ul>
+        </div>
+
+        
+        <div class="skill-category-item">
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-globe-americas mr-3 text-accent"></i>Web Development
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>HTML, CSS, JavaScript (Beginner)</li>
+                <li>Responsive Design Principles (Basic)</li>
+                <li>Static Website Deployment (e.g., GitHub Pages)</li>
+            </ul>
+        </div>
+
+       
+        <div class="skill-category-item">
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-tools mr-3 text-accent"></i>Tools & Platforms
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>IDEs: VS Code, Eclipse</li>
+                <li>Productivity Tools: Notion, Obsidian</li>
+                <li>AI Tools: ChatGPT, DeepSeek, GitHub Copilot</li>
+            </ul>
+        </div>
+
+        
+        <div class="skill-category-item md:col-span-1 lg:col-span-1"> 
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-bullhorn mr-3 text-accent"></i>Digital Marketing & SEO
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>Digital Marketing Strategy</li>
+                <li>Social Media Management</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <li>Analytics Basics (e.g., Google Analytics)</li>
+            </ul>
+        </div>
+
+        
+        <div class="skill-category-item md:col-span-2 lg:col-span-1"> 
+            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                <i class="fas fa-pen-fancy mr-3 text-accent"></i>Content Creation & Soft Skills
+            </h4>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                <li>Blogging & Long-form Content Writing</li>
+                <li>Video Editing (Short-form, Reels, Tutorials)</li>
+                <li>Public Speaking & Team Collaboration</li>
+                <li>Creative Problem-Solving</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
     </section>
 
     <!-- 3. Experience -->
