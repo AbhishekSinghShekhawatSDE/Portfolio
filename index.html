@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Singh Shekhawat - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon1.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Tailwind Dark Mode Configuration
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4F46E5', // indigo-600
+                            light: '#6366F1', // indigo-500
+                            dark: '#3730A3'  // indigo-800
+                        },
+                        accent: {
+                            DEFAULT: '#10B981', // emerald-500
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl md:text-2xl font-bold text-primary-dark dark:text-primary-light flex items-center">
+    <!-- Paste the SVG code here -->
+    <!-- Option 2: Font Awesome User Icon -->
+    <i class="fas fa-user w-6 h-6 mr-2 text-accent"></i> 
+    <span>Abhishek Singh Shekhawat</span>
+</a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="#home" class="nav-link hover:text-primary dark:hover:text-primary-light">Home</a>
+                <a href="#about" class="nav-link hover:text-primary dark:hover:text-primary-light">About</a>
+                <a href="#experience" class="nav-link hover:text-primary dark:hover:text-primary-light">Experience</a>
+                <a href="#projects" class="nav-link hover:text-primary dark:hover:text-primary-light">Projects</a>
+                <a href="#certifications" class="nav-link hover:text-primary dark:hover:text-primary-light">Certifications</a>
+                <a href="#achievements" class="nav-link hover:text-primary dark:hover:text-primary-light">Achievements</a>
+                <a href="#contact" class="nav-link hover:text-primary dark:hover:text-primary-light">Contact</a>
+                
+            </div>
+            <div class="md:hidden flex items-center">
+                
+                
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden bg-white dark:bg-gray-800 py-2">
+            <a href="#home" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Home</a>
+            <a href="#about" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">About</a>
+            <a href="#experience" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Experience</a>
+            <a href="#projects" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Projects</a>
+            <a href="#certifications" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Certifications</a>
+            <a href="#achievements" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Achievements</a>
+            <a href="#contact" class="block px-6 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 nav-link-mobile">Contact</a>
+        </div>
+    </nav>
+
+    <div class="pt-16">
+
+     <!-- 1. Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4 relative">
+    
+    <div class="absolute top-20 left-6 md:left-10 z-20 group">
+        <button id="themeToggleHero" 
+                class="p-3 bg-white dark:bg-gray-700 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300" 
+                title="">
+            <span id="themeToggleHeroIcon">
+                <i class="fas fa-moon text-primary dark:text-yellow-400"></i> 
+            </span>
+        </button>
+        <span class="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 
+                     text-xs text-gray-600 dark:text-gray-400 
+                     opacity-0 group-hover:opacity-100 transition-opacity duration-300 
+                     theme-toggle-hint whitespace-nowrap 
+                     bg-white dark:bg-gray-700 px-2 py-1 rounded shadow-md">
+            Toggle Theme
+            <svg class="inline-block w-3 h-3 ml-1 -mt-0.5 animate-bounceY-hero" 
+                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </span>
+    </div>
+<div class="text-center max-w-3xl">
+            <img src="assets\Abhishek SIngh Shekhawat Profile Picture.png" alt="Abhishek Singh Shekhawat" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-8 shadow-xl border-4 border-white dark:border-gray-700">
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap">Abhishek Singh Shekhawat</h1>
+            <p class="text-xl md:text-2xl text-primary-dark dark:text-primary-light font-medium mb-6">Aspiring DevOps & Cloud Engineer | CSE Undergrad</p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-xl mx-auto">
+                Passionate about automating processes, building scalable cloud infrastructure, and driving innovation through technology. Actively learning and applying DevOps principles.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="assets\ABHISHEK SINGH SHEKHAWAT_.pdf" download="Abhishek_Shekhawat_Resume.pdf" class="inline-block bg-primary hover:bg-primary-light text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+                <a href="#contact" class="inline-block bg-accent hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    <i class="fas fa-paper-plane mr-2"></i>Get in Touch
+                </a>
+            </div>
+            <div class="mt-10 flex justify-center space-x-6">
+                <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual GitHub link -->
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual LinkedIn link -->
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section id="about" class="py-20 px-4 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">About Me</h2>
+        <div class="grid md:grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+            <div class="lg:col-span-3 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Bio</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    Hello! I'm Abhishek Singh Shekhawat, a Computer Science Engineering undergraduate at Poornima University with a strong enthusiasm for DevOps methodologies and Cloud Computing. I am dedicated to building robust, scalable solutions and continuously seek opportunities to apply my knowledge in real-world scenarios. My journey is fueled by a desire to innovate and contribute to impactful technology projects, with a particular interest in automation, CI/CD, and cloud-native architectures.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Beyond academics, I'm an active learner, always exploring new tools and technologies in the DevOps and cloud space. I believe in collaborative problem-solving and am eager to contribute to dynamic team environments.
+                </p>
+            </div>
+            <div class="lg:col-span-2 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Education</h3>
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">B.Tech in Computer Science & Engineering</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Poornima University, Jaipur</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500">2022 – 2026 | CGPA: 6.4</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Class 12th (CBSE)</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500">2021 – 2022 | 63%</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Class 10th (CBSE)</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500">2019 – 2020 | 66%</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-6 text-center text-primary dark:text-primary-light">Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-cloud-upload-alt mr-2 text-accent"></i>DevOps & Cloud</h4>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>Cloud Computing Fundamentals</li>
+                        <li>Basic Networking</li>
+                        <li>GitHub</li>
+                        <li>Jira (Beginner)</li>
+                        <li>Python (Beginner - for scripting & automation)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-code mr-2 text-accent"></i>Web & Programming</h4>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>HTML, CSS, JavaScript (Beginner)</li>
+                        <li>PHP (Beginner)</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-tools mr-2 text-accent"></i>Tools & Platforms</h4>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>VS Code, Eclipse</li>
+                        <li>Notion, Obsidian</li>
+                        <li>AI Tools: ChatGPT, DeepSeek, GitHub Copilot</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3"> <!-- Marketing & Soft Skills can span more if needed, or keep it as a single column -->
+                     <h4 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100"><i class="fas fa-lightbulb mr-2 text-accent"></i>Marketing & Soft Skills</h4>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 md:columns-2">
+                        <li>Digital Marketing & Social Media Management</li>
+                        <li>SEO (Search Engine Optimization)</li>
+                        <li>Blogging & Content Creation</li>
+                        <li>Video Editing</li>
+                        <li>Problem Solving & Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Experience -->
+    <section id="experience" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Experience</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Web Development Intern</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Prodigy Infotech (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">May 2024 – May 2024 (4 weeks)</p>
+                        <i class="fas fa-laptop-code fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Developed and optimized front-end components using HTML, CSS, and JavaScript.</li>
+                            <li>Assisted in backend API integration and UI enhancements for live projects.</li>
+                            <li>Debugged and improved web applications for better user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Digital Marketing Intern</h3>
+                        <p class="text-gray-600 dark:text-gray-400">SilverLabs Technologies Inc. (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Nov 2024 – Dec 2024 (8 weeks)</p>
+                        <i class="fas fa-chart-line fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Developed social media marketing strategies to improve online visibility.</li>
+                            <li>Analyzed engagement metrics and adjusted campaigns accordingly.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Campus Ambassador</h3>
+                        <p class="text-gray-600 dark:text-gray-400">ChatWise (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">May 2024 – June 2024 (8 weeks)</p>
+                        <i class="fas fa-bullhorn fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Conducted outreach and promotional campaigns to increase platform awareness.</li>
+                            <li>Managed student engagement activities and referral programs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Digital Marketing Intern</h3>
+                        <p class="text-gray-600 dark:text-gray-400">ChatWise (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">May 2023 – June 2023 (8 weeks)</p>
+                        <i class="fas fa-search-dollar fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Assisted in SEO optimization and content marketing.</li>
+                            <li>Managed paid advertisement campaigns to increase reach.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Sales Executive</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Nippon Reliance Life Insurance (Onsite)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">June 2023 – Aug 2023</p>
+                        <i class="fas fa-handshake fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Achieved sales targets through direct client engagement and product marketing.</li>
+                            <li>Provided financial consultation and guided customers in policy selection.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Social Media Marketing Intern</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Akriti Jewels, Inc. (Hybrid)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Jan 2023 – Mar 2023 (12 weeks)</p>
+                        <i class="fas fa-share-alt fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Created digital content strategies and managed social media pages.</li>
+                            <li>Conducted market research to enhance brand engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Campus Ambassador</h3>
+                        <p class="text-gray-600 dark:text-gray-400">DevTown (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Feb 2023 – Feb 2023 (4 weeks)</p>
+                        <i class="fas fa-user-friends fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                           <li>Promoted technical workshops and webinars, increasing participation by 30%.</li>
+                           <li>Facilitated networking among students and industry professionals.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-start bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:pr-6 text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-primary dark:text-primary-light">Internshala Student Partner</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Internshala (Remote)</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Dec 2022 – Jan 2023 (4 weeks)</p>
+                        <i class="fas fa-hands-helping fa-2x text-accent mt-3"></i>
+                    </div>
+                    <div class="md:w-2/3">
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                            <li>Promoted internship opportunities and career development programs.</li>
+                            <li>Increased student platform adoption through targeted promotions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section id="projects" class="py-20 px-4 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/E0E7FF/4F46E5?text=Crypto+Token" alt="Crypto Token Project" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">CryptoCurrency Creation & Deployment</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Developed and deployed a custom cryptocurrency token on a blockchain platform, implementing smart contracts using Solidity.</p>
+                    <div class="mb-4">
+                        <span class="tech-badge">Solidity</span><span class="tech-badge">Blockchain</span><span class="tech-badge">Deployment</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/D1FAE5/059669?text=Admission+App" alt="Admission Enquiry App" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">Admission Enquiry App</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Created a responsive form-based application for handling college admission inquiries, deployed on an Apache Server.</p>
+                     <div class="mb-4">
+                        <span class="tech-badge">HTML</span><span class="tech-badge">PHP</span><span class="tech-badge">Apache</span><span class="tech-badge">MySQL</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/FEF3C7/D97706?text=Movie+Tickets" alt="Movie Ticket Booking System" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">Movie Ticket Booking System</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Built an interactive ticket booking system with database integration for seat management and user bookings.</p>
+                    <div class="mb-4">
+                        <span class="tech-badge">Python</span><span class="tech-badge">MySQL</span><span class="tech-badge">CLI</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                        View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/DBEAFE/1E40AF?text=Eclipse+Weather" alt="Eclipse Weather App" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">Eclipse Weather App</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Basic web weather application for Eclipse, integrating OpenWeather API to fetch and display real-time weather updates.</p>
+                    <div class="mb-4">
+                        <span class="tech-badge">Java (Eclipse)</span><span class="tech-badge">API</span><span class="tech-badge">Web</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                         View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/FEE2E2/DC2626?text=Stopwatch" alt="Stopwatch Web App" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">Stopwatch (Web App)</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Designed and developed a functional stopwatch web application using JavaScript for timing events.</p>
+                    <div class="mb-4">
+                        <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                         View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://via.placeholder.com/400x250/CCEEFF/007BFF?text=Pragati+GPT" alt="Pragati GPT" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">Pragati GPT Scheme Recommender</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">AI-powered recommender system to suggest relevant government schemes based on user queries.</p>
+                    <div class="mb-4">
+                        <span class="tech-badge">Python</span><span class="tech-badge">NLP</span><span class="tech-badge">AI/ML</span>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline"> <!-- TODO: Add actual link -->
+                         View Details <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Certifications -->
+    <section id="certifications" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Training & Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- DevOps & Cloud Focused Certs first -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-cloud fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cloud Computing</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-network-wired fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Networking Basics</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Cisco Net Academy</p>
+                </div>
+                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-python fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Python</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">IBM</p>
+                </div>
+                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-js-square fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">JavaScript (Basic)</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">HackerRank</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-node-js fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Node.js (Basic)</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">HackerRank</p>
+                </div>
+                <!-- Other Certs -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-brain fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Generative AI</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Google Cloud</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-shield-alt fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Cisco Net Academy / Internshala</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-user-secret fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cybersecurity</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Cisco Net Academy / Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-laptop-code fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Web Development</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">SkillUp</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-google fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Google Digital Marketing</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Google</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-microchip fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to AI</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">SkillUp</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-certificate fa-3x text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">RSCIT</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">RKCL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Achievements -->
+    <section id="achievements" class="py-20 px-4 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Achievements & Activities</h2>
+        <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <i class="fas fa-award text-2xl text-yellow-500 dark:text-yellow-400 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">University Award – Tech & Innovation</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Recognized for contributions in technology and innovation at Poornima University.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-trophy text-2xl text-yellow-500 dark:text-yellow-400 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Hackathon Finalist/Participant</h3>
+                        <p class="text-gray-600 dark:text-gray-400">3rd Place – HackaryaVerse; Finalist – Formidium Hackathon; Regional Level Participant – Smart India Hackathon (SIH).</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-medal text-2xl text-blue-500 dark:text-blue-400 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Rashtrapati Award in Bharat Scouts & Guides</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Achieved the highest award for Scouts in India, demonstrating leadership and community service.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-person-running text-2xl text-green-500 dark:text-green-400 mr-4 mt-1"></i> <!-- Changed icon -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Two-Time Regional Sports Meet Participant (Yoga)</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Represented Kendriya Vidyalaya Sangathan in Yoga.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-users text-2xl text-indigo-500 dark:text-indigo-400 mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Active Volunteer & Delegate</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Delegate – Model United Nations (MUN); Volunteer at Nanhe Kalakaar NGO, Careers360 Event, Nature Club & Eco Club.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 7. Contact -->
+    <section id="contact" class="py-20 px-4 bg-gradient-to-br from-indigo-100 to-gray-50 dark:from-gray-800 dark:to-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Get In Touch</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+                I'm excited about opportunities in DevOps, Cloud Engineering, and innovative tech projects. Let's connect!
+            </p>
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg mx-auto">
+                <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-2">
+                    <i class="fas fa-envelope mr-2 text-primary dark:text-primary-light"></i>
+                    <a href="mailto:abhisheksinghshekhawat63@gmail.com" class="hover:underline">abhisheksinghshekhawat63@gmail.com</a>
+                </p>
+                <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-6">
+                    <i class="fas fa-phone mr-2 text-primary dark:text-primary-light"></i>
+                    <a href="tel:+919928130195" class="hover:underline">+91 99281 30195</a>
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual GitHub link -->
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual LinkedIn link -->
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <!-- Add other social links if you have them, e.g., Twitter -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-gray-800 dark:bg-black text-gray-300 dark:text-gray-500 py-8 text-center">
+        <p>&copy; <span id="currentYear"></span> Abhishek Singh Shekhawat. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart text-red-500"></i> by Abhishek Singh Shekhawat</p>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

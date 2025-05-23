@@ -1,0 +1,86 @@
+/* Custom scrollbar (Optional, but adds a modern touch) */
+/* For Webkit browsers (Chrome, Safari, Edge Chromium) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray track */
+}
+.dark ::-webkit-scrollbar-track {
+    background: #2d3748; /* Dark gray track for dark mode (Tailwind gray-800) */
+}
+::-webkit-scrollbar-thumb {
+    background: #4F46E5; /* Primary color (Tailwind indigo-600) */
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3730A3; /* Darker primary on hover (Tailwind indigo-800) */
+}
+
+/* For Firefox */
+/* Note: Firefox scrollbar styling is more limited */
+html {
+    scrollbar-width: thin;
+    /* thumb color, track color */
+    scrollbar-color: #4F46E5 #f1f1f1;
+}
+html.dark {
+    /* thumb color, track color for dark mode */
+    scrollbar-color: #4F46E5 #2d3748;
+}
+
+
+/* Active Nav Link Style (Example) */
+/* These colors should match your Tailwind primary color definitions */
+.nav-link.active {
+    color: #3730A3; /* Tailwind primary-dark */
+    font-weight: 600; /* semibold */
+    border-bottom: 2px solid #4F46E5; /* Tailwind primary */
+    padding-bottom: 2px;
+}
+.dark .nav-link.active {
+    color: #6366F1; /* Tailwind primary-light */
+    border-bottom: 2px solid #6366F1; /* Tailwind primary-light */
+}
+
+/* Mobile nav active link style */
+#mobileMenu .nav-link-mobile.active {
+    background-color: #e0e7ff; /* Tailwind indigo-100 for light mode */
+    color: #3730A3; /* Tailwind primary-dark */
+    font-weight: 600;
+}
+.dark #mobileMenu .nav-link-mobile.active {
+    background-color: #3730a3; /* Tailwind indigo-800 for dark mode */
+    color: #c7d2fe; /* Tailwind indigo-200 */
+}
+
+
+/* Ensure body takes full height for footer positioning if content is short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* The main content wrapper div, immediately after nav, before footer */
+/* This ID is on the div that has `pt-16` */
+div.pt-16 {
+    flex-grow: 1;
+}
+.animate-bounceY-hero {
+    animation: bounceY-hero 1s infinite;
+}
+
+@keyframes bounceY-hero {
+  0%, 100% {
+    transform: translateY(-25%); /* Moves the arrow up slightly */
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1); /* Easing for the bounce */
+  }
+  50% {
+    transform: translateY(0); /* Arrow at its normal position */
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1); /* Easing for the bounce */
+  }
+}
+/* Tech badges are styled directly with Tailwind utility classes in the HTML:
+   e.g., <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-200 dark:text-indigo-900 mb-1">Tech</span>
+   No additional CSS needed here for tech-badge unless you want a global override.
+*/
