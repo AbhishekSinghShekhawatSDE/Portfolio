@@ -3,7 +3,7 @@
 This repository contains the source code for my personal portfolio website (Version 1.0). This site showcases my skills, projects, experience, and journey as an aspiring DevOps & Cloud Engineer.
 
 **Live Site:** [https://abhisheksinghshekhawatsde.github.io/Portfolio/](https://abhisheksinghshekhawatsde.github.io/Portfolio/)
-*(Note: Replace with your actual live URL if different)*
+
 
 ## Project Genesis & Development Process
 
@@ -71,6 +71,3 @@ While this Version 1.0 serves as a strong foundation, there are plans for future
 *   **UI/UX Refinements:** Continuously improving the design and user experience based on feedback and evolving design trends.
 *   **Portfolio 1.0 Preservation:** This current version (1.0) will be preserved as a snapshot or "memory" of this stage in my development journey.
 
----
-
-This `README.md` aims to provide context for the project, outline its development lifecycle, and share future aspirations.
