@@ -71,3 +71,5 @@ While this Version 1.0 serves as a strong foundation, there are plans for future
 *   **UI/UX Refinements:** Continuously improving the design and user experience based on feedback and evolving design trends.
 *   **Portfolio 1.0 Preservation:** This current version (1.0) will be preserved as a snapshot or "memory" of this stage in my development journey.
 
+![My Project Screenshot](assets/Output.jpg)
+
