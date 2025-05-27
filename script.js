@@ -1,115 +1,139 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Dark Mode Toggle (Button in Hero Section) ---
-const themeToggleHero = document.getElementById('themeToggleHero');
-const themeToggleHeroIcon = document.getElementById('themeToggleHeroIcon'); // The <span> inside the button that holds the icon
-const sunIconHTML = '<i class="fas fa-sun text-yellow-400"></i>';    // HTML for the sun icon
-const moonIconHTML = '<i class="fas fa-moon text-primary"></i>';      // HTML for the moon icon (adjust text-primary if needed)
+    const themeToggleHero = document.getElementById('themeToggleHero');
+    const themeToggleHeroIconSpan = document.getElementById('themeToggleHeroIcon');
+    const sunIconHTML = '<i class="fas fa-sun text-yellow-400 fa-lg"></i>';
+    const moonIconHTML = '<i class="fas fa-moon text-primary dark:text-yellow-400 fa-lg"></i>';
 
-// Function to apply the theme based on localStorage or system preference
-const applyTheme = () => {
-    if (localStorage.getItem('theme') === 'dark' ||
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        if (themeToggleHeroIcon) themeToggleHeroIcon.innerHTML = sunIconHTML; // Show sun in dark mode
-    } else {
-        document.documentElement.classList.remove('dark');
-        if (themeToggleHeroIcon) themeToggleHeroIcon.innerHTML = moonIconHTML; // Show moon in light mode
-    }
-};
+    const applyTheme = () => {
+        const isDarkMode = localStorage.getItem('theme') === 'dark' ||
+            (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
-// Apply the theme when the page loads
-applyTheme();
-
-// Add event listener to the button if it exists
-if (themeToggleHero) {
-    themeToggleHero.addEventListener('click', () => {
-        // Toggle the 'dark' class on the <html> element
-        const isDarkMode = document.documentElement.classList.toggle('dark');
-        
-        // Save the user's preference to localStorage
-        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        
-        // Update the button's icon
         if (isDarkMode) {
-            if (themeToggleHeroIcon) themeToggleHeroIcon.innerHTML = sunIconHTML;
+            document.documentElement.classList.add('dark');
+            if (themeToggleHeroIconSpan) themeToggleHeroIconSpan.innerHTML = sunIconHTML;
+            if (themeToggleHero) themeToggleHero.setAttribute('title', 'Switch to Light Mode');
         } else {
-            if (themeToggleHeroIcon) themeToggleHeroIcon.innerHTML = moonIconHTML;
+            document.documentElement.classList.remove('dark');
+            if (themeToggleHeroIconSpan) themeToggleHeroIconSpan.innerHTML = moonIconHTML;
+            if (themeToggleHero) themeToggleHero.setAttribute('title', 'Switch to Dark Mode');
         }
-    });
-}
+    };
 
-    // --- Mobile Menu Toggle ---
+    applyTheme();
+
+    if (themeToggleHero) {
+        themeToggleHero.addEventListener('click', () => {
+            const isDarkMode = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            applyTheme();
+        });
+    }
+
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
-    
+
     if (mobileMenuButton && mobileMenu) {
-        const mobileMenuIcon = mobileMenuButton.querySelector('i'); // Get the icon element
+        const mobileMenuIcon = mobileMenuButton.querySelector('i');
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             if (mobileMenu.classList.contains('hidden')) {
                 mobileMenuIcon.classList.remove('fa-times');
                 mobileMenuIcon.classList.add('fa-bars');
+                mobileMenuButton.setAttribute('aria-label', 'Open menu');
             } else {
                 mobileMenuIcon.classList.remove('fa-bars');
                 mobileMenuIcon.classList.add('fa-times');
+                mobileMenuButton.setAttribute('aria-label', 'Close menu');
             }
         });
     }
 
-    // --- Smooth Scroll for Nav Links & Close Mobile Menu on Click ---
     const navLinks = document.querySelectorAll('.nav-link, .nav-link-mobile');
-    const navbar = document.querySelector('nav'); // Get the navbar element
+    const navbar = document.querySelector('nav');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const targetId = link.getAttribute('href');
-            if (!targetId || targetId === '#') return; // Prevent error for href="#"
+            if (!targetId || !targetId.startsWith('#') || targetId === '#') return;
 
+            e.preventDefault();
             const targetElement = document.querySelector(targetId);
+
             if (targetElement) {
                 const navbarHeight = navbar ? navbar.offsetHeight : 0;
                 const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                const offsetPosition = elementPosition - navbarHeight;
+                // For fixed navbar, the target element's top needs to be offset by navbar height.
+                // The hero section itself now has padding to account for the navbar.
+                // So, scrolling to `elementPosition - navbarHeight` might be correct if the hero section's top padding *wasn't* already considering the navbar.
+                // However, since hero section's padding `pt-20` or `pt-24` is designed to place content *below* the navbar,
+                // we should scroll to the targetElement's top. The `scroll-smooth` and `scroll-margin-top` (if set on sections)
+                // or manual offset can handle this.
+                // The current calculation for `offsetPosition` for smooth scroll should still work correctly, as it calculates the
+                // position needed for the top of the target element to align just below the fixed navbar.
+                 let offsetPosition = elementPosition - navbarHeight;
+
+                // Special handling for #home: it already has top padding for navbar
+                if (targetId === '#home') {
+                    offsetPosition = elementPosition; // Scroll to its actual top
+                     // Or to be slightly below the navbar if home's padding isn't precise
+                    if (elementPosition > navbarHeight) { // only adjust if it's not already at top
+                        offsetPosition = elementPosition - navbarHeight;
+                    } else {
+                        offsetPosition = 0; // Go to very top for #home
+                    }
+                }
+
 
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
                 });
             }
-            // Close mobile menu if a link is clicked from mobile menu
+
             if (mobileMenu && link.classList.contains('nav-link-mobile') && !mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
                 const mobileMenuIcon = mobileMenuButton.querySelector('i');
                 if (mobileMenuIcon) {
                     mobileMenuIcon.classList.remove('fa-times');
                     mobileMenuIcon.classList.add('fa-bars');
+                    mobileMenuButton.setAttribute('aria-label', 'Open menu');
                 }
             }
         });
     });
 
-    // --- Active Nav Link Highlighting on Scroll (ScrollSpy) ---
     const sections = document.querySelectorAll('section[id]');
-    const desktopNavLinks = document.querySelectorAll('nav .hidden.md\\:flex a.nav-link'); // Escaped colon for querySelector
+    const desktopNavLinks = document.querySelectorAll('nav .hidden.md\\:flex a.nav-link');
     const mobileNavLinksList = document.querySelectorAll('#mobileMenu a.nav-link-mobile');
 
     function setActiveLink() {
         let currentSectionId = '';
         const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        // Adjust scrollThreshold based on new layout where sections themselves have top padding related to navbar_height
+        const scrollThreshold = navbarHeight + 20; // A bit more lenient
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - navbarHeight - 70; // Adjusted offset for better accuracy
-            const sectionBottom = sectionTop + section.offsetHeight;
-            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-                currentSectionId = section.getAttribute('id');
+            // The top padding of sections (like pt-20 on #home) means their offsetTop is 0 or near 0 for #home.
+            // BoundingClientRect().top is more reliable for fixed nav.
+            const sectionTopViewport = section.getBoundingClientRect().top;
+
+            if (sectionTopViewport <= scrollThreshold && sectionTopViewport < window.innerHeight - section.offsetHeight / 2 ) {
+                 if (section.getBoundingClientRect().bottom > scrollThreshold) {
+                    currentSectionId = section.getAttribute('id');
+                 }
             }
         });
-        
-        if (!currentSectionId && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) { // Check if at bottom
-             const lastSection = sections[sections.length - 1];
-             if (lastSection) currentSectionId = lastSection.getAttribute('id');
+
+
+        // Fallback for when scrolled to the very top or bottom
+        if (window.scrollY < sections[0].offsetTop + sections[0].offsetHeight / 2 - navbarHeight) {
+             currentSectionId = sections[0].getAttribute('id');
+        } else if ((window.innerHeight + Math.ceil(window.scrollY)) >= document.body.offsetHeight - 20) { // Near bottom
+            const lastSection = sections[sections.length - 1];
+            if (lastSection) currentSectionId = lastSection.getAttribute('id');
         }
+
 
         [desktopNavLinks, mobileNavLinksList].forEach(linkList => {
             linkList.forEach(link => {
@@ -121,27 +145,10 @@ if (themeToggleHero) {
         });
     }
     window.addEventListener('scroll', setActiveLink);
-    setActiveLink(); // Initial call to set active link on page load
+    setActiveLink();
 
-    // --- Update Footer Year ---
     const currentYearSpan = document.getElementById('currentYear');
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
-
-    // --- Optional: AOS Animation (if you decide to use it) ---
-    // 1. Add CDN link for CSS in <head>: <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    // 2. Add CDN link for JS before </body>: <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    // 3. Then initialize:
-    /*
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,    // values from 0 to 3000, with step 50ms
-            offset: 120,      // offset (in px) from the original trigger point
-            once: true,       // whether animation should happen only once - while scrolling down
-            easing: 'ease-in-out', // default easing for AOS animations
-        });
-    }
-    */
-    // 4. Add data-aos attributes to HTML elements e.g. <div data-aos="fade-up"></div>
 });
