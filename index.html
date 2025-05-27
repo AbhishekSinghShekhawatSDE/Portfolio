@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -6,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Singh Shekhawat - Portfolio</title>
     <link rel="icon" type="image/png" href="assets/favicon1.png">
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <script>
-        // Tailwind Dark Mode Configuration
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -27,12 +21,12 @@
                     },
                     colors: {
                         primary: {
-                            DEFAULT: '#4F46E5', // indigo-600
-                            light: '#6366F1', // indigo-500
-                            dark: '#3730A3'  // indigo-800
+                            DEFAULT: '#4F46E5',
+                            light: '#6366F1',
+                            dark: '#3730A3'
                         },
                         accent: {
-                            DEFAULT: '#10B981', // emerald-500
+                            DEFAULT: '#10B981',
                         }
                     }
                 }
@@ -42,15 +36,12 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
 
-    <!-- Navbar -->
     <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-50 top-0">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#home" class="text-xl md:text-2xl font-bold text-primary-dark dark:text-primary-light flex items-center">
-    <!-- Paste the SVG code here -->
-    <!-- Option 2: Font Awesome User Icon -->
-    <i class="fas fa-user w-6 h-6 mr-2 text-accent"></i> 
-    <span>Abhishek Singh Shekhawat</span>
-</a>
+                <i class="fas fa-user w-6 h-6 mr-2 text-accent"></i>
+                <span>Abhishek Singh Shekhawat</span>
+            </a>
             <div class="hidden md:flex space-x-4 items-center">
                 <a href="#home" class="nav-link hover:text-primary dark:hover:text-primary-light">Home</a>
                 <a href="#about" class="nav-link hover:text-primary dark:hover:text-primary-light">About</a>
@@ -59,11 +50,11 @@
                 <a href="#certifications" class="nav-link hover:text-primary dark:hover:text-primary-light">Certifications</a>
                 <a href="#achievements" class="nav-link hover:text-primary dark:hover:text-primary-light">Achievements</a>
                 <a href="#contact" class="nav-link hover:text-primary dark:hover:text-primary-light">Contact</a>
-                
             </div>
             <div class="md:hidden flex items-center">
-                
-                
+                <button id="mobileMenuButton" aria-label="Open menu" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
             </div>
         </div>
         <div id="mobileMenu" class="md:hidden hidden bg-white dark:bg-gray-800 py-2">
@@ -77,773 +68,668 @@
         </div>
     </nav>
 
-    <div class="pt-16">
-
-     <!-- 1. Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4 relative">
-    
-    <div class="absolute top-20 left-6 md:left-10 z-20 group">
-        <button id="themeToggleHero" 
-                class="p-3 bg-white dark:bg-gray-700 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300" 
-                title="">
-            <span id="themeToggleHeroIcon">
-                <i class="fas fa-moon text-primary dark:text-yellow-400"></i> 
-            </span>
-        </button>
-        <span class="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 
-                     text-xs text-gray-600 dark:text-gray-400 
-                     opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-                     theme-toggle-hint whitespace-nowrap 
-                     bg-white dark:bg-gray-700 px-2 py-1 rounded shadow-md">
-            Toggle Theme
-            <svg class="inline-block w-3 h-3 ml-1 -mt-0.5 animate-bounceY-hero" 
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </span>
-    </div>
-<div class="text-center max-w-3xl">
-            <img src="assets\Abhishek SIngh Shekhawat Profile Picture.png" alt="Abhishek Singh Shekhawat" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-8 shadow-xl border-4 border-white dark:border-gray-700">
-          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3 whitespace-nowrap">Abhishek Singh Shekhawat</h1>
-            <p class="text-xl md:text-2xl text-primary-dark dark:text-primary-light font-medium mb-6">Aspiring DevOps & Cloud Engineer | B.Tech CSE</p>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-xl mx-auto">
-                Passionate about automating processes, building scalable cloud infrastructure, and driving innovation through technology. Actively learning and applying DevOps principles.
-            </p>
-            <div class="space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="assets\ABHISHEK SINGH SHEKHAWAT_.pdf" download="Abhishek_Shekhawat_Resume.pdf" class="inline-block bg-primary hover:bg-primary-light text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                    <i class="fas fa-download mr-2"></i>Download Resume
-                </a>
-                <a href="#contact" class="inline-block bg-accent hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                    <i class="fas fa-paper-plane mr-2"></i>Get in Touch
-                </a>
+    <div>
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-20 md:pt-24 pb-20 px-4 relative">
+            <div class="absolute top-20 left-6 md:left-10 z-20 group">
+                <button id="themeToggleHero"
+                        class="p-2 bg-white dark:bg-gray-700 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300"
+                        title="Toggle theme"
+                        aria-label="Toggle theme">
+                    <span id="themeToggleHeroIcon">
+                    </span>
+                </button>
+                <span class="absolute top-full mt-2 left-1/2 transform -translate-x-1/2
+                             text-xs text-gray-600 dark:text-gray-400
+                             opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                             theme-toggle-hint whitespace-nowrap
+                             bg-white dark:bg-gray-700 px-2 py-1 rounded shadow-md">
+                    Toggle Theme
+                    <svg class="inline-block w-3 h-3 ml-1 -mt-0.5 animate-bounceY-hero"
+                         fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </span>
             </div>
-            <div class="mt-10 flex justify-center space-x-6">
-                <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual GitHub link -->
-                    <i class="fab fa-github fa-3x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual LinkedIn link -->
-                    <i class="fab fa-linkedin fa-3x"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. About Me -->
-    <section id="about" class="py-20 px-4 container mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">About Me</h2>
-        <div class="grid md:grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-            <div class="lg:col-span-3 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Bio</h3>
-                <p class="text-lg leading-relaxed mb-6">
-                    I'm Abhishek Singh Shekhawat, a Computer Science Engineering student at Poornima University, Jaipur (2022–2026), with a strong inclination toward DevOps, Cloud Computing, and automation-driven solutions. My core focus lies in building scalable infrastructure, streamlining development pipelines, and leveraging modern cloud-native architectures.</p>
-	        <p class="text-lg leading-relaxed mb-6">
-		    I’ve cultivated hands-on experience through projects and internships where I used tools like GitHub, CI/CD pipelines, basic scripting with Python, and version control systems. I'm actively exploring platforms like AWS, containerization, and infrastructure-as-code.</p>
-		<p class="text-lg leading-relaxed mb-6">
-                    Outside the terminal, I bring in a background in digital marketing, video editing, and community leadership, having served as a campus ambassador and earned the prestigious Rashtrapati Scout Award — a testament to my discipline and team ethic.</p>
-                <p class="text-lg leading-relaxed mb-6">
-                    I'm driven by curiosity, collaborative energy, and a passion for solving real-world problems. Currently, I’m looking for opportunities where I can contribute, learn, and grow alongside high-performing tech teams.</p>
-		<p class="text-lg leading-relaxed">
-                    
+            <div class="text-center max-w-3xl">
+                <img src="assets/Abhishek SIngh Shekhawat Profile Picture.png" alt="Abhishek Singh Shekhawat" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-8 shadow-xl border-4 border-white dark:border-gray-700">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3">Abhishek Singh Shekhawat</h1>
+                <p class="text-xl md:text-2xl text-primary-dark dark:text-primary-light font-medium mb-6">Aspiring DevOps & Cloud Engineer | B.Tech CSE</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-xl mx-auto">
+                    Passionate about automating processes, building scalable cloud infrastructure, and driving innovation through technology. Actively learning and applying DevOps principles.
                 </p>
-            </div>
-            <div class="lg:col-span-2 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Education</h3>
-		<p class="text-base leading-relaxed mb-6">
-                    My academic track record might appear modest on paper, but it reflects a deeper journey driven by practical learning, leadership, and adaptability. I bridge theory with execution and continuously upskill through certifications, open-source work, and team-based tech challenges.</p>
-                <div class="mb-6">
-                    <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Bachelor of Technology in Computer Science & Engineering</h4>
-                    <p class="text-gray-600 dark:text-gray-400">Poornima University, Jaipur | 2022 – 2026</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
-		    <p class="text-sm text-gray-500 dark:text-gray-500">Focus Areas: DevOps, Cloud Computing, Automation</p>
-                </div>
-                <div class="mb-6">
-                    <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Senior Secondary Education (Science Stream)</h4>
-                    <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur | CBSE | Graduated: 2022</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
-		    <p class="text-sm text-gray-500 dark:text-gray-500">Subjects: Physics, Chemistry, Mathematics, Computer Science</p>
-                </div>
-                <div>
-                    <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Secondary Education</h4>
-                    <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur | CBSE | Graduated: 2020</p>
-                    <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
-		    <p class="text-sm text-gray-500 dark:text-gray-500">Subjects: English, Mathematics, Science, Social Studies</p>
-                </div>
-            </div>
-        </div>
-        <!-- Skills Section -->
-<div class="mt-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-    <h3 class="text-2xl font-semibold mb-8 text-center text-primary dark:text-primary-light">Skills</h3> 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10"> 
-
-        
-        <div class="skill-category-item">
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-cloud-upload-alt mr-3 text-accent"></i>DevOps & Cloud Fundamentals
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>Cloud Computing Concepts</li>
-                <li>Basic Networking</li>
-                <li>Version Control: Git & GitHub</li>
-                <li>CI/CD Awareness</li>
-                <li>Jira (Beginner)</li>
-            </ul>
-        </div>
-
-        
-        <div class="skill-category-item">
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-laptop-code mr-3 text-accent"></i>Programming & Scripting
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>Python (Beginner – Scripting & Automation)</li>
-                <li>PHP (Beginner)</li>
-                <li>MySQL (Database Handling)</li>
-            </ul>
-        </div>
-
-        
-        <div class="skill-category-item">
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-globe-americas mr-3 text-accent"></i>Web Development
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>HTML, CSS, JavaScript (Beginner)</li>
-                <li>Responsive Design Principles (Basic)</li>
-                <li>Static Website Deployment (e.g., GitHub Pages)</li>
-            </ul>
-        </div>
-
-       
-        <div class="skill-category-item">
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-tools mr-3 text-accent"></i>Tools & Platforms
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>IDEs: VS Code, Eclipse</li>
-                <li>Productivity Tools: Notion, Obsidian</li>
-                <li>AI Tools: ChatGPT, DeepSeek, GitHub Copilot</li>
-            </ul>
-        </div>
-
-        
-        <div class="skill-category-item md:col-span-1 lg:col-span-1"> 
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-bullhorn mr-3 text-accent"></i>Digital Marketing & SEO
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>Digital Marketing Strategy</li>
-                <li>Social Media Management</li>
-                <li>SEO (Search Engine Optimization)</li>
-                <li>Analytics Basics (e.g., Google Analytics)</li>
-            </ul>
-        </div>
-
-        
-        <div class="skill-category-item md:col-span-2 lg:col-span-1"> 
-            <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
-                <i class="fas fa-pen-fancy mr-3 text-accent"></i>Content Creation & Soft Skills
-            </h4>
-            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
-                <li>Blogging & Long-form Content Writing</li>
-                <li>Video Editing (Short-form, Reels, Tutorials)</li>
-                <li>Public Speaking & Team Collaboration</li>
-                <li>Creative Problem-Solving</li>
-            </ul>
-        </div>
-
-    </div>
-</div>
-    </section>
-
-    <!-- 3. Experience -->
-<section id="experience" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
-    <div class="container mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Professional Experience</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-cogs text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">DevOps Engineer Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">KPSmart IT Solutions Pvt Ltd</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>CI/CD pipeline setup & management.</li>
-                    <li>Cloud infrastructure provisioning & automation.</li>
-                    <li>Agile development practices & daily scrums.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-laptop-code text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Web Development Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Prodigy Infotech</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Developed & optimized front-end components.</li>
-                    <li>Assisted in backend API integration & UI tasks.</li>
-                    <li>Debugged and improved web applications.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-bullhorn text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Campus Ambassador Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">ChatWise</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Conducted outreach & promotional campaigns.</li>
-                    <li>Managed student engagement activities.</li>
-                    <li>Enhanced communication & networking skills.</li>
-                </ul>
-            </div>
-            
-            
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-chart-line text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Digital Marketing Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">SilverLabs Technologies Inc.</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Developed social media marketing strategies.</li>
-                    <li>Analyzed engagement metrics for campaign adjustments.</li>
-                    <li>Researched industry trends for content optimization.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-handshake text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Sales Executive</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Nippon Reliance Life Insurance</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Achieved sales targets via client engagement.</li>
-                    <li>Provided financial consultation & policy guidance.</li>
-                    <li>Developed negotiation & CRM skills.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-search-dollar text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Digital Marketing Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">ChatWise</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Assisted in SEO optimization & content marketing.</li>
-                    <li>Managed paid advertisement campaigns.</li>
-                    <li>Tracked campaign performance & reported metrics.</li>
-                </ul>
-            </div>
-            
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                 <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-share-alt text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Social Media Marketing Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Akriti Jewels, Inc.</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Created digital content strategies & managed pages.</li>
-                    <li>Conducted market research for brand engagement.</li>
-                    <li>Monitored social media trends & audience interaction.</li>
-                </ul>
-            </div>
-            
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                     <i class="fas fa-users-cog text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Campus Ambassador Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">DevTown</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                   <li>Promoted technical workshops & webinars.</li>
-                   <li>Facilitated student-professional networking.</li>
-                   <li>Represented brand within campus community.</li>
-                </ul>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
-                <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
-                    <i class="fas fa-hands-helping text-2xl text-white"></i>
-                </div>
-                <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Internshala Student Partner Intern</h3>
-                <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Internshala</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
-                <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
-                    <li>Promoted internship & career programs.</li>
-                    <li>Increased student platform adoption.</li>
-                    <li>Organized and managed promotional events.</li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-  <!-- 4. Projects -->
-<section id="projects" class="py-20 px-4 container mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9"> 
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/Sayitforyou/a4a163193c1b262fcbc552136950c27ecdf39133/images/Sayitforyou.funwebsite.png" alt="SayItForYou Platform" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">SayItForYou</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Platform for anonymous emotional expression—confessions, apologies, gratitude, or closure—delivered with privacy.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">HTML </span><span class="tech-badge">CSS </span><span class="tech-badge">JavaScript </span><span class="tech-badge">Node.js</span>
-                </div>
-                <a href="https://sayitforyou.fun/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9">
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/INRC_Token/57afd4327640cd754f5191d7ac22e2f304a2109a/images/OutPut.jpg" alt="INRC Token" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">INRC Token</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Custom cryptocurrency (INRC) aimed at reducing exchange fees for crypto trading with Indian Rupees.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">Solidity </span><span class="tech-badge">Ethereum </span><span class="tech-badge">Remix IDE </span><span class="tech-badge">MetaMask </span>
-                </div>
-                <a href="http://inrctoken.shop/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9">
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/PragatiGPT/aa6379e782f9d217106281d7685de5b139abf611/assets/Output.png" alt="PragatiGPT" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">PragatiGPT</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">AI-integrated platform suggesting applicable Indian government schemes in regional languages to address user problems.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">Python </span><span class="tech-badge">Streamlit </span><span class="tech-badge">Google API </span><span class="tech-badge">DB </span>
-                </div>
-                <a href="https://abhisheksinghshekhawatsde.github.io/PragatiGPT/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9">
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/SEOSparkGPT/3d3603bc8f0a6fd9e7143cc872b54e6e1f4b9ca4/Output.jpg" alt="SEOSparkGPT" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">SEOSparkGPT</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">AI tool generating SEO-optimized titles, descriptions, and headlines for content creators based on user input.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">HTML5 </span><span class="tech-badge">Tailwind </span><span class="tech-badge">JavaScript </span><span class="tech-badge">AI API </span>
-                </div>
-                <a href="https://abhisheksinghshekhawatsde.github.io/SEOSparkGPT/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9">
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/EclipseWeather/10f105fbabe8b81756ff5c45c199f84852dee44e/Output.jpg" alt="EclipseWeather App" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">EclipseWeather</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">A simple, minimalist web application providing weather reports, integrated with an external API for data.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">HTML5 </span><span class="tech-badge">CSS3 </span><span class="tech-badge">JavaScript </span><span class="tech-badge">API </span>
-                </div>
-                <a href="https://abhisheksinghshekhawatsde.github.io/EclipseWeather/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9">
-                <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/EclipseCalculator/7e1dcf0024d5be251542acc15245e9b42f143f70/Output.jpg" alt="EclipseCalculator" class="w-full h-full object-cover">
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">EclipseCalculator</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">A clean, static web-based calculator for basic arithmetic operations, built with fundamental web technologies.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">HTML5 </span><span class="tech-badge">CSS3 </span><span class="tech-badge">JavaScript </span>
-                </div>
-                <a href="https://abhisheksinghshekhawatsde.github.io/EclipseCalculator/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
-                    View Project <i class="fas fa-external-link-alt ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
-            <div class="aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-700 flex items-center justify-center"> 
-                <img src="assets/school-website.png" alt="School Website Project" class="w-full h-full object-cover"> 
-                <span class="text-gray-400 dark:text-gray-500">Coming Soon</span>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">School Website (Upcoming)</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Developing a clean, responsive website for a school, focusing on user experience and professional outreach.</p>
-                <div class="mb-4 mt-auto">
-                    <span class="tech-badge">HTML </span><span class="tech-badge">CSS </span><span class="tech-badge">JavaScript </span>
-                </div>
-                <a href="#" class="inline-block text-gray-400 dark:text-gray-500 cursor-not-allowed">
-                    Coming Soon <i class="fas fa-hourglass-half ml-1"></i>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <!-- 5. Certifications -->
-<section id="certifications" class="py-20 px-4 container mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Training & Certifications</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
-
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-cloud-upload-alt fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cloud Computing</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-aws fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Hands-on Cloud Computing with AWS</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Devtown</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-brain fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Generative AI</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Google Cloud</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-comments fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Enhancing Soft Skills and Personality</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IIT Kanpur</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-vial fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Software Testing</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IIT Kharagpur</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-react fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Master React Workshop</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Coding Ninjas x IIT Kanpur</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-shield-alt fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Fundamentals of Information Security</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-user-secret fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cybersecurity</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-user-secret fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cybersecurity</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-user-shield fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-fire-extinguisher fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Cyber Threat Management</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-desktop fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Endpoint Security</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-network-wired fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Networking Basics</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-map-signs fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Addressing and Basic Troubleshooting</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-headset fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Support and Security</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-server fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Networking Devices and Initial Configuration</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-user-ninja fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Defense</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-hat-wizard fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacker</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-user-shield fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Internshala</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-mask fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking Essentials</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">EC-Council</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-atom fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to AI</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">SkillUp</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-python fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Python</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IBM</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-js fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">JavaScript (Basic)</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-node-js fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Node.js (Basic)</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-java fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Java Essentials</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-leaf fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Completion of MongoDB Certification</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">GeeksforGeeks</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-code fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Web Development</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">SkillUp</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-react fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Front-End Web Development using JavaScript and React.js</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Devtown</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-google fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Google Digital Marketing Certification</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Google</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-id-card fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">RSCIT</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">RKCL</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fas fa-database fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">HackerRank Certification for SQL (Advanced)</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-            <div><i class="fab fa-python fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">HackerRank Certification for Python</h3></div>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
-        </div>
-
-    </div>
-</section>
-
-    <section id="achievements" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
-    <div class="container mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Recognitions & Achievements</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-rocket fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Cryptocurrency Innovation</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Developed & deployed a custom cryptocurrency (inrtoken.shop) for the Indian crypto ecosystem.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-comments fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Social Platform Launch</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Launched "SayItForYou.fun," an anonymous platform for sharing messages and feelings.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-code-branch fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Real-World Web Development</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Delivered 20+ web development projects for various small organizations and businesses.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-award fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">University Award – Tech & Innovation</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Recognized by Poornima University for contributions in technology and fostering innovation.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-trophy fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">3rd Place – HackaryaVerse Hackathon</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Achieved third place in the competitive HackaryaVerse hackathon event.</p>
-                </div>
-            </div>
-            
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-flag-checkered fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Finalist – Formidium Hackathon</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Reached the final stage in the challenging Formidium Hackathon.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-laptop-code fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Regional Level Participant – SIH</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Participated at the regional level in the prestigious Smart India Hackathon (SIH).</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-medal fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Rashtrapati Scout Award</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Completed and received the highest award in Bharat Scouts & Guides.</p>
-                </div>
-            </div>
-
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
-                <i class="fas fa-person-running fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
-                <div>
-                    <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Two-Time Regional Sports Meet Participant</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Represented Kendriya Vidyalaya Sangathan in Yoga at the Regional Sports Meet twice.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- Activities Section -->
-<section id="activities" class="py-16 px-4 container mx-auto">
-    <div class="max-w-3xl mx-auto text-center md:text-left">
-        <h2 class="text-2xl md:text-3xl font-bold mb-10 text-gray-800 dark:text-white flex items-center justify-center md:justify-start">
-            <i class="fas fa-users-rays mr-3 text-accent text-3xl"></i>
-            <span>Activities</span>
-        </h2>
-
-        <div class="space-y-6">
-            <div class="flex flex-col sm:flex-row items-start">
-                <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Delegate:</span>
-                <span class="text-gray-700 dark:text-gray-300 text-md">Model United Nations (MUN), Poornima University – Honed diplomacy & public speaking.</span>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-start">
-                <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Volunteer:</span>
-                <span class="text-gray-700 dark:text-gray-300 text-md">Nanhe Kalakaar NGO – Supported events for underprivileged children.</span>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-start">
-                <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Volunteer:</span>
-                <span class="text-gray-700 dark:text-gray-300 text-md">Careers360 Event – Assisted at educational events.</span>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-start">
-                <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Contributor:</span>
-                <span class="text-gray-700 dark:text-gray-300 text-md">Nature Club & Eco Club – Actively promoted environmental awareness.</span>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-start">
-                <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Participant:</span>
-                <span class="text-gray-700 dark:text-gray-300 text-md">Formidium Hackathon & Smart India Hackathon (SIH) – Enriched collaboration & problem-solving.</span>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- 7. Contact -->
-    <section id="contact" class="py-20 px-4 bg-gradient-to-br from-indigo-100 to-gray-50 dark:from-gray-800 dark:to-gray-900">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Get In Touch</h2>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl mx-auto">
-                I’m actively seeking internship or part-time roles in DevOps, Cloud Engineering, or tech-driven environments. Let’s connect if you're working on something exciting — I’d love to contribute and grow with your team.
-            </p>
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg mx-auto">
-                <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-2">
-                    <i class="fas fa-envelope mr-2 text-primary dark:text-primary-light"></i>
-                    <a href="mailto:abhisheksinghshekhawat63@gmail.com" class="hover:underline">abhisheksinghshekhawat63@gmail.com</a>
-                </p>
-                <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-6">
-                    <i class="fas fa-phone mr-2 text-primary dark:text-primary-light"></i>
-                    <a href="tel:+919928130195" class="hover:underline">+91 99281 30195</a>
-                </p>
-                <div class="flex justify-center space-x-6">
-                    <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual GitHub link -->
-                        <i class="fab fa-github fa-2x"></i>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="assets/ABHISHEK SINGH SHEKHAWAT_.pdf" download="Abhishek_Shekhawat_Resume.pdf" class="inline-block bg-primary hover:bg-primary-light text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                        <i class="fas fa-download mr-2"></i>Download Resume
                     </a>
-                    <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300"> <!-- TODO: Add actual LinkedIn link -->
-                        <i class="fab fa-linkedin fa-2x"></i>
+                    <a href="#contact" class="inline-block bg-accent hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                        <i class="fas fa-paper-plane mr-2"></i>Get in Touch
                     </a>
-                    <!-- Add other social links if you have them, e.g., Twitter -->
+                </div>
+                <div class="mt-10 flex justify-center space-x-6">
+                    <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 8. Footer -->
-    <footer class="bg-gray-800 dark:bg-black text-gray-300 dark:text-gray-500 py-8 text-center">
-        <p>&copy; <span id="currentYear"></span> Abhishek Singh Shekhawat. All rights reserved.</p>
-        <p>Made with <i class="fas fa-heart text-red-500"></i> by Abhishek Singh Shekhawat</p>
-    </footer>
+        <section id="about" class="py-20 px-4 container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">About Me</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+                <div class="lg:col-span-3 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Bio</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        I'm Abhishek Singh Shekhawat, a Computer Science Engineering student at Poornima University, Jaipur (2022–2026), with a strong inclination toward DevOps, Cloud Computing, and automation-driven solutions. My core focus lies in building scalable infrastructure, streamlining development pipelines, and leveraging modern cloud-native architectures.</p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        I’ve cultivated hands-on experience through projects and internships where I used tools like GitHub, CI/CD pipelines, basic scripting with Python, and version control systems. I'm actively exploring platforms like AWS, containerization, and infrastructure-as-code.</p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Outside the terminal, I bring in a background in digital marketing, video editing, and community leadership, having served as a campus ambassador and earned the prestigious Rashtrapati Scout Award — a testament to my discipline and team ethic.</p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        I'm driven by curiosity, collaborative energy, and a passion for solving real-world problems. Currently, I’m looking for opportunities where I can contribute, learn, and grow alongside high-performing tech teams.</p>
+                </div>
+                <div class="lg:col-span-2 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary dark:text-primary-light">Education</h3>
+                    <p class="text-base leading-relaxed mb-6">
+                        My academic track record might appear modest on paper, but it reflects a deeper journey driven by practical learning, leadership, and adaptability. I bridge theory with execution and continuously upskill through certifications, open-source work, and team-based tech challenges.</p>
+                    <div class="mb-6">
+                        <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Bachelor of Technology in Computer Science & Engineering</h4>
+                        <p class="text-gray-600 dark:text-gray-400">Poornima University, Jaipur | 2022 – 2026</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Focus Areas: DevOps, Cloud Computing, Automation</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Senior Secondary Education (Science Stream)</h4>
+                        <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur | CBSE | Graduated: 2022</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Subjects: Physics, Chemistry, Mathematics, Computer Science</p>
+                    </div>
+                    <div>
+                        <h4 class="text-l font-semibold text-gray-600 dark:text-gray-100">Secondary Education</h4>
+                        <p class="text-gray-600 dark:text-gray-400">Kendriya Vidyalaya No. 3, Jaipur | CBSE | Graduated: 2020</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">First Division</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-500">Subjects: English, Mathematics, Science, Social Studies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-primary dark:text-primary-light">Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+                    <div class="skill-category-item">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-cloud-upload-alt mr-3 text-accent"></i>DevOps & Cloud Fundamentals
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>Cloud Computing Concepts</li>
+                            <li>Basic Networking</li>
+                            <li>Version Control: Git & GitHub</li>
+                            <li>CI/CD Awareness</li>
+                            <li>Jira (Beginner)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category-item">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-laptop-code mr-3 text-accent"></i>Programming & Scripting
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>Python (Beginner – Scripting & Automation)</li>
+                            <li>PHP (Beginner)</li>
+                            <li>MySQL (Database Handling)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category-item">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-globe-americas mr-3 text-accent"></i>Web Development
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>HTML, CSS, JavaScript (Beginner)</li>
+                            <li>Responsive Design Principles (Basic)</li>
+                            <li>Static Website Deployment (e.g., GitHub Pages)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category-item">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-tools mr-3 text-accent"></i>Tools & Platforms
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>IDEs: VS Code, Eclipse</li>
+                            <li>Productivity Tools: Notion, Obsidian</li>
+                            <li>AI Tools: ChatGPT, DeepSeek, GitHub Copilot</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category-item md:col-span-1 lg:col-span-1">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-bullhorn mr-3 text-accent"></i>Digital Marketing & SEO
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>Digital Marketing Strategy</li>
+                            <li>Social Media Management</li>
+                            <li>SEO (Search Engine Optimization)</li>
+                            <li>Analytics Basics (e.g., Google Analytics)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category-item md:col-span-2 lg:col-span-1">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100 flex items-center">
+                            <i class="fas fa-pen-fancy mr-3 text-accent"></i>Content Creation & Soft Skills
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 pl-1">
+                            <li>Blogging & Long-form Content Writing</li>
+                            <li>Video Editing (Short-form, Reels, Tutorials)</li>
+                            <li>Public Speaking & Team Collaboration</li>
+                            <li>Creative Problem-Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Professional Experience</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-cogs text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">DevOps Engineer Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">KPSmart IT Solutions Pvt Ltd</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>CI/CD pipeline setup & management.</li>
+                            <li>Cloud infrastructure provisioning & automation.</li>
+                            <li>Agile development practices & daily scrums.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-laptop-code text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Web Development Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Prodigy Infotech</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Developed & optimized front-end components.</li>
+                            <li>Assisted in backend API integration & UI tasks.</li>
+                            <li>Debugged and improved web applications.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-bullhorn text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Campus Ambassador Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">ChatWise</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Conducted outreach & promotional campaigns.</li>
+                            <li>Managed student engagement activities.</li>
+                            <li>Enhanced communication & networking skills.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-chart-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Digital Marketing Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">SilverLabs Technologies Inc.</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Developed social media marketing strategies.</li>
+                            <li>Analyzed engagement metrics for campaign adjustments.</li>
+                            <li>Researched industry trends for content optimization.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-handshake text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Sales Executive</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Nippon Reliance Life Insurance</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Achieved sales targets via client engagement.</li>
+                            <li>Provided financial consultation & policy guidance.</li>
+                            <li>Developed negotiation & CRM skills.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-search-dollar text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Digital Marketing Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">ChatWise</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Assisted in SEO optimization & content marketing.</li>
+                            <li>Managed paid advertisement campaigns.</li>
+                            <li>Tracked campaign performance & reported metrics.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-share-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Social Media Marketing Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Akriti Jewels, Inc.</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">3 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Created digital content strategies & managed pages.</li>
+                            <li>Conducted market research for brand engagement.</li>
+                            <li>Monitored social media trends & audience interaction.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-users-cog text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Campus Ambassador Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">DevTown</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Promoted technical workshops & webinars.</li>
+                            <li>Facilitated student-professional networking.</li>
+                            <li>Represented brand within campus community.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 min-h-[300px] md:min-h-[320px]">
+                        <div class="w-16 h-16 rounded-full bg-primary dark:bg-accent mb-4 flex items-center justify-center shadow-md flex-shrink-0">
+                            <i class="fas fa-hands-helping text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Internshala Student Partner Intern</h3>
+                        <p class="text-sm text-gray-700 dark:text-gray-500 font-medium mb-1">Internshala</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">2 months</p>
+                        <ul class="list-disc list-inside text-left text-xs text-gray-600 dark:text-gray-300 space-y-1 mt-auto pt-2">
+                            <li>Promoted internship & career programs.</li>
+                            <li>Increased student platform adoption.</li>
+                            <li>Organized and managed promotional events.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 px-4 container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/Sayitforyou/a4a163193c1b262fcbc552136950c27ecdf39133/images/Sayitforyou.funwebsite.png" alt="SayItForYou Platform Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">SayItForYou</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Platform for anonymous emotional expression—confessions, apologies, gratitude, or closure—delivered with privacy.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">HTML</span> <span class="tech-badge">CSS</span> <span class="tech-badge">JavaScript</span> <span class="tech-badge">Node.js</span>
+                        </div>
+                        <a href="https://sayitforyou.fun/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/INRC_Token/57afd4327640cd754f5191d7ac22e2f304a2109a/images/OutPut.jpg" alt="INRC Token Project Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">INRC Token</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Custom cryptocurrency (INRC) aimed at reducing exchange fees for crypto trading with Indian Rupees.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">Solidity</span> <span class="tech-badge">Ethereum</span> <span class="tech-badge">Remix IDE</span> <span class="tech-badge">MetaMask</span>
+                        </div>
+                        <a href="http://inrctoken.shop/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/PragatiGPT/aa6379e782f9d217106281d7685de5b139abf611/assets/Output.png" alt="PragatiGPT Project Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">PragatiGPT</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">AI-integrated platform suggesting applicable Indian government schemes in regional languages to address user problems.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">Python</span> <span class="tech-badge">Streamlit</span> <span class="tech-badge">Google API</span> <span class="tech-badge">DB</span>
+                        </div>
+                        <a href="https://abhisheksinghshekhawatsde.github.io/PragatiGPT/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/SEOSparkGPT/3d3603bc8f0a6fd9e7143cc872b54e6e1f4b9ca4/Output.jpg" alt="SEOSparkGPT Project Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">SEOSparkGPT</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">AI tool generating SEO-optimized titles, descriptions, and headlines for content creators based on user input.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">HTML5</span> <span class="tech-badge">Tailwind</span> <span class="tech-badge">JavaScript</span> <span class="tech-badge">AI API</span>
+                        </div>
+                        <a href="https://abhisheksinghshekhawatsde.github.io/SEOSparkGPT/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/EclipseWeather/10f105fbabe8b81756ff5c45c199f84852dee44e/Output.jpg" alt="EclipseWeather App Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">EclipseWeather</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">A simple, minimalist web application providing weather reports, integrated with an external API for data.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">HTML5</span> <span class="tech-badge">CSS3</span> <span class="tech-badge">JavaScript</span> <span class="tech-badge">API</span>
+                        </div>
+                        <a href="https://abhisheksinghshekhawatsde.github.io/EclipseWeather/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://raw.githubusercontent.com/AbhishekSinghShekhawatSDE/EclipseCalculator/7e1dcf0024d5be251542acc15245e9b42f143f70/Output.jpg" alt="EclipseCalculator Screenshot" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">EclipseCalculator</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">A clean, static web-based calculator for basic arithmetic operations, built with fundamental web technologies.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">HTML5</span> <span class="tech-badge">CSS3</span> <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <a href="https://abhisheksinghshekhawatsde.github.io/EclipseCalculator/" target="_blank" rel="noopener noreferrer" class="inline-block text-accent hover:underline">
+                            View Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <img src="assets/school-website.png" alt="Placeholder for Upcoming School Website Project" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-primary dark:text-primary-light">School Website (Upcoming)</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">Developing a clean, responsive website for a school, focusing on user experience and professional outreach.</p>
+                        <div class="mb-4 mt-auto">
+                            <span class="tech-badge">HTML</span> <span class="tech-badge">CSS</span> <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <a href="#" class="inline-block text-gray-400 dark:text-gray-500 cursor-not-allowed">
+                            Coming Soon <i class="fas fa-hourglass-half ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="py-20 px-4 container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Training & Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-cloud-upload-alt fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cloud Computing</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-aws fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Hands-on Cloud Computing with AWS</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Devtown</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-brain fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Generative AI</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Google Cloud</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-comments fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Enhancing Soft Skills and Personality</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IIT Kanpur</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-vial fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Software Testing</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IIT Kharagpur</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-react fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Master React Workshop</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Coding Ninjas x IIT Kanpur</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-shield-alt fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Fundamentals of Information Security</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-user-secret fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cybersecurity</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-user-secret fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to Cybersecurity</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-user-shield fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-fire-extinguisher fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Cyber Threat Management</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-desktop fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Endpoint Security</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-network-wired fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Networking Basics</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-map-signs fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Addressing and Basic Troubleshooting</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-headset fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Support and Security</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-server fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Networking Devices and Initial Configuration</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-user-ninja fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Network Defense</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-hat-wizard fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacker</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Cisco</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-user-shield fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Internshala</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-mask fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Ethical Hacking Essentials</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">EC-Council</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-atom fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Introduction to AI</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">SkillUp</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-python fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Python</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">IBM</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-js fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">JavaScript (Basic)</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-node-js fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Node.js (Basic)</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-java fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Java Essentials</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Infosys Springboard</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transtion-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-leaf fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Completion of MongoDB Certification</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">GeeksforGeeks</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-code fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Web Development</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">SkillUp</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-react fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Front-End Web Development using JavaScript and React.js</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Devtown</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-google fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">Google Digital Marketing Certification</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Google</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-id-card fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">RSCIT</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">RKCL</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fas fa-database fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">HackerRank Certification for SQL (Advanced)</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center min-h-[180px] flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                    <div><i class="fab fa-python fa-3x text-accent mb-4"></i><h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">HackerRank Certification for Python</h3></div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">HackerRank</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="py-20 px-4 bg-gray-100 dark:bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">Recognitions & Achievements</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-rocket fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Cryptocurrency Innovation</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Developed & deployed a custom cryptocurrency (inrtoken.shop) for the Indian crypto ecosystem.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-comments fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Social Platform Launch</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Launched "SayItForYou.fun," an anonymous platform for sharing messages and feelings.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-code-branch fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Real-World Web Development</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Delivered 20+ web development projects for various small organizations and businesses.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-award fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">University Award – Tech & Innovation</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Recognized by Poornima University for contributions in technology and fostering innovation.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-trophy fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">3rd Place – HackaryaVerse Hackathon</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Achieved third place in the competitive HackaryaVerse hackathon event.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-flag-checkered fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Finalist – Formidium Hackathon</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Reached the final stage in the challenging Formidium Hackathon.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-laptop-code fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Regional Level Participant – SIH</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Participated at the regional level in the prestigious Smart India Hackathon (SIH).</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-medal fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Rashtrapati Scout Award</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Completed and received the highest award in Bharat Scouts & Guides.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex items-start space-x-4 min-h-[180px] md:min-h-[200px] transition-all duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 hover:scale-102">
+                        <i class="fas fa-person-running fa-2x text-accent flex-shrink-0 w-8 mt-1"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary-dark dark:text-primary-light mb-1">Two-Time Regional Sports Meet Participant</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Represented Kendriya Vidyalaya Sangathan in Yoga at the Regional Sports Meet twice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="py-16 px-4 container mx-auto">
+            <div class="max-w-3xl mx-auto text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-bold mb-10 text-gray-800 dark:text-white flex items-center justify-center md:justify-start">
+                    <i class="fas fa-users-rays mr-3 text-accent text-3xl"></i>
+                    <span>Activities</span>
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Delegate:</span>
+                        <span class="text-gray-700 dark:text-gray-300 text-md">Model United Nations (MUN), Poornima University – Honed diplomacy & public speaking.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Volunteer:</span>
+                        <span class="text-gray-700 dark:text-gray-300 text-md">Nanhe Kalakaar NGO – Supported events for underprivileged children.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Volunteer:</span>
+                        <span class="text-gray-700 dark:text-gray-300 text-md">Careers360 Event – Assisted at educational events.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Contributor:</span>
+                        <span class="text-gray-700 dark:text-gray-300 text-md">Nature Club & Eco Club – Actively promoted environmental awareness.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start">
+                        <span class="font-semibold text-primary dark:text-primary-light mr-2 sm:w-28 md:w-32 flex-shrink-0 mb-1 sm:mb-0">Participant:</span>
+                        <span class="text-gray-700 dark:text-gray-300 text-md">Formidium Hackathon & Smart India Hackathon (SIH) – Enriched collaboration & problem-solving.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 bg-gradient-to-br from-indigo-100 to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Get In Touch</h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl mx-auto">
+                    I’m actively seeking internship or part-time roles in DevOps, Cloud Engineering, or tech-driven environments. Let’s connect if you're working on something exciting — I’d love to contribute and grow with your team.
+                </p>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg mx-auto">
+                    <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-2">
+                        <i class="fas fa-envelope mr-2 text-primary dark:text-primary-light"></i>
+                        <a href="mailto:abhisheksinghshekhawat63@gmail.com" class="hover:underline">abhisheksinghshekhawat63@gmail.com</a>
+                    </p>
+                    <p class="text-xl font-medium text-gray-800 dark:text-gray-100 mb-6">
+                        <i class="fas fa-phone mr-2 text-primary dark:text-primary-light"></i>
+                        <a href="tel:+919928130195" class="hover:underline">+91 99281 30195</a>
+                    </p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://github.com/abhisheksinghshekhawatsde" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abhisheksinghshekhawat/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition duration-300">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-800 dark:bg-black text-gray-300 dark:text-gray-500 py-8 text-center">
+            <p>© <span id="currentYear"></span> Abhishek Singh Shekhawat. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart text-red-500"></i> by Abhishek Singh Shekhawat</p>
+        </footer>
 
     </div>
-
-    <script src="script.js"></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <script src="script.js" defer></script>
 </body>
 </html>
